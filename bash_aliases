@@ -1,0 +1,48 @@
+## Alias de directorios y navegación
+#Directorios
+#alias nombre='cd ruta_directorio_habitual'
+
+#Facilitar navegación
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# ls
+alias lsd="ls -l | grep '^d'" 
+alias ll="ls -lAhF"
+
+##Alias de git
+alias st='git status'
+alias co='git checkout'
+alias ci='git commit -m'
+alias cia='git commit -a -m'
+alias br='git branch'
+alias push='git push'
+alias add='git add'
+alias nuevo="git log HEAD@{1}..HEAD@{0}" # Muestra commits desde el último pull
+# Añade al último commit los cambios uncommitted y unstaged
+alias gcaa="git commit -a --amend -C HEAD"
+
+
+##Cambiar el prompt
+alias ps_normal='PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$"'
+alias ps_corto='PS1="\u:/\W/\$ "'
+alias ps_largo='PS1="\e[33m{$(date)}\e[0m\e[1;36m[\j]\e[0m\e[1;32m<$?>\e[0m\e[2;36m(\u\e[0m@\e[1;34m\w)\e[0m\n\$>"'
+# {fecha} [n_tareas en background] <código retorno comando anterior> (usuario@ruta_directorio)
+
+## Programas 
+
+
+#Alias imagemagick 
+alias recorte_nav='convert -crop 1347x575+0+90 -resize 50%'
+
+
+# Borrar archivos `.DS_Store`
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+
+alias recargar='source ~/.bashrc'
+alias instalar='sudo apt-get install'
+alias buscar_ap='apt-cache search'
+alias mostrar_ap='apt-cache show'
