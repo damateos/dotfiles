@@ -12,9 +12,13 @@ alias .....="cd ../../../.."
 alias lsd="ls -l | grep '^d'" 
 alias ll="ls -lAhF"
 
+alias proceso='ps -ef | grep'
+
+
 ##Alias de git
 alias st='git status'
 alias co='git checkout'
+alias cob='git checkout -b'
 alias ci='git commit -m'
 alias cia='git commit -a -m'
 alias br='git branch'
@@ -23,6 +27,7 @@ alias add='git add'
 alias nuevo="git log HEAD@{1}..HEAD@{0}" # Muestra commits desde el último pull
 # Añade al último commit los cambios uncommitted y unstaged
 alias gcaa="git commit -a --amend -C HEAD"
+alias deshacer_ci='git reset --soft HEAD~1'
 
 
 ##Cambiar el prompt
