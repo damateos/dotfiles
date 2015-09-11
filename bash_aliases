@@ -3,11 +3,11 @@
 #alias nombre='cd ruta_directorio_habitual'
 
 #Facilitar navegación
-alias ..="cd .."
-alias ..2="cd ../.."
-alias ..3="cd ../../.."
-alias ..4="cd ../../../.."
-alias ..5="cd ../../../../.."
+alias ..="cd .."                 # subir un directorio
+alias ..2="cd ../.."             # subir dos directorios
+alias ..3="cd ../../.."          # subir tres directorios
+alias ..4="cd ../../../.."       # subir cuatro directorios
+alias ..5="cd ../../../../.."    # subir cinco directorios
 alias --="cd -"
 
 # ls
