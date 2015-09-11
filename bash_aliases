@@ -29,6 +29,9 @@ alias nuevo="git log HEAD@{1}..HEAD@{0}" # Muestra commits desde el último pull
 # Añade al último commit los cambios uncommitted y unstaged
 alias gcaa="git commit -a --amend -C HEAD"
 alias deshacer_ci='git reset --soft HEAD~1'
+#log de cambios
+alias cambios='git log --date-order --date=short --graph --full-history --all --pretty=format:"%h - %ad - %s"'
+alias cambios_autor='git log --date-order --date=short --graph --full-history --all --pretty=format:"%h - %ad - %an - %s"'
 
 
 ##Cambiar el prompt
