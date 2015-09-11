@@ -7,6 +7,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias --="cd -"
 
 # ls
 alias lsd="ls -l | grep '^d'" 
