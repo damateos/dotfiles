@@ -53,6 +53,7 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 alias recargar='source ~/.bashrc'
 alias instalar='sudo apt-get install'
+alias reinstalar='sudo apt-get --reinstall install'
 alias buscar_ap='apt-cache search'
 alias mostrar_ap='apt-cache show'
 alias actualizar='sudo apt-get install --only-upgrade'
