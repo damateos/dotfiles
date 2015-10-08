@@ -24,6 +24,7 @@ alias ci='git commit -m'
 alias cia='git commit -a -m'
 alias br='git branch'
 alias push='git push'
+alias pushom='git push origin master'
 alias add='git add'
 alias nuevo="git log HEAD@{1}..HEAD@{0}" # Muestra commits desde el último pull
 # Añade al último commit los cambios uncommitted y unstaged
@@ -39,6 +40,8 @@ alias ps_normal='PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\
 alias ps_corto='PS1="\u:/\W/\$ "'
 alias ps_largo='PS1="\e[33m{$(date)}\e[0m\e[1;36m[\j]\e[0m\e[1;32m<$?>\e[0m\e[2;36m(\u\e[0m@\e[1;34m\w)\e[0m\n\$>"'
 # {fecha} [n_tareas en background] <código retorno comando anterior> (usuario@ruta_directorio)
+
+ps_git='[\u: \W$(__git_ps1 " (%s)")]\$ ' #uso: PS1=$ps_git utiliza https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 
 ## Programas 
 
