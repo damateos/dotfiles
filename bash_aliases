@@ -9,6 +9,12 @@ alias ..3="cd ../../.."          # subir tres directorios
 alias ..4="cd ../../../.."       # subir cuatro directorios
 alias ..5="cd ../../../../.."    # subir cinco directorios
 
+alias ..="cd .."                 # subir un directorio
+alias ...="cd ../.."             # subir dos directorios
+alias ....="cd ../../.."          # subir tres directorios
+alias .....="cd ../../../.."       # subir cuatro directorios
+alias ......="cd ../../../../.."    # subir cinco directorios
+
 # ls
 alias lsd="ls -l | grep '^d'" 
 alias ll="ls -lAhF"
