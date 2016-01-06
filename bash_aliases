@@ -30,7 +30,6 @@ alias ps_largo='PS1="\e[33m{$(date)}\e[0m\e[1;36m[\j]\e[0m\e[1;32m<$?>\e[0m\e[2;
 ps_git='[\u: \W$(__git_ps1 " (%s)")]\$ ' #uso: PS1=$ps_git utiliza https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 
 
-
 alias recargar='source ~/.bashrc'
 alias instalar='sudo apt-get install'
 alias reinstalar='sudo apt-get --reinstall install'
@@ -39,19 +38,14 @@ alias mostrar_ap='apt-cache show'
 alias actualizar='sudo apt-get install --only-upgrade'
 alias desinstalar='sudo apt-get remove --purge'
 
-
-
 ## Programas 
-
 
 #Alias imagemagick 
 # Recorta una captura de pantalla del navegador
 alias recorte_nav='convert -crop 1347x575+0+90 -resize 50%'  
 
-
 # Borrar archivos `.DS_Store`
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
 
 ##Alias de git
 alias st='git status'
