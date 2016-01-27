@@ -16,7 +16,7 @@ alias .....="cd ../../../.."       # subir cuatro directorios
 alias ......="cd ../../../../.."    # subir cinco directorios
 
 # ls
-alias lsd="ls -l | grep '^d'" 
+alias lsd="ls -l | grep '^d'"
 alias ll="ls -lAhF"
 
 alias proceso='ps -ef | grep'
@@ -38,14 +38,17 @@ alias mostrar_ap='apt-cache show'
 alias actualizar='sudo apt-get install --only-upgrade'
 alias desinstalar='sudo apt-get remove --purge'
 
-## Programas 
+## Programas
 
-#Alias imagemagick 
+#Alias imagemagick
 # Recorta una captura de pantalla del navegador
-alias recorte_nav='convert -crop 1347x575+0+90 -resize 50%'  
+alias recorte_nav='convert -crop 1347x575+0+90 -resize 50%'
 
 # Borrar archivos `.DS_Store`
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Wget
+alias descargar_directorio='wget -r -np -k'
 
 ##Alias de git
 alias st='git status'
