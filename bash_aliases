@@ -41,14 +41,22 @@ alias desinstalar='sudo apt-get remove --purge'
 ## Programas
 
 #Alias imagemagick
-# Recorta una captura de pantalla del navegador
+# Recorta una captura de pantalla del navegador (cambiar las medidas para ajustarlas a la pantalla)
 alias recorte_nav='convert -crop 1347x575+0+90 -resize 50%'
 
 # Borrar archivos `.DS_Store`
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
+#TODO
+alias t='todo.sh -d $HOME/todo/todo.cfg'
+alias todo='$EDITOR $HOME/todo/todo.txt'
+alias done='$EDITOR $HOME/todo/done.txt'
+
 # Wget
 alias descargar_directorio='wget -r -np -k'
+
+# Información del sistema
+alias informacion='uname -a; lsb_release -a; cat /etc/issue'
 
 ##Alias de git
 alias st='git status'
