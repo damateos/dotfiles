@@ -9,5 +9,5 @@
 .Rproj.user/
 
 # resultados knitr
-.pdf
-.html
+*.pdf
+*.html
