@@ -1,0 +1,13 @@
+# Historia
+.Rhistory
+.Rapp.history
+
+# datos de sesión
+.RData
+
+# RStudio 
+.Rproj.user/
+
+# resultados knitr
+.pdf
+.html
