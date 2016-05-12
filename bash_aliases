@@ -1,6 +1,7 @@
 ## Alias de directorios y navegación
 #Directorios
 #alias nombre='cd ruta_directorio_habitual'
+alias td='cd $HOME/todo'
 
 #Facilitar navegación
 alias ..="cd .."                 # subir un directorio
@@ -30,13 +31,16 @@ alias ps_largo='PS1="\e[33m{$(date)}\e[0m\e[1;36m[\j]\e[0m\e[1;32m<$?>\e[0m\e[2;
 ps_git='[\u: \W$(__git_ps1 " (%s)")]\$ ' #uso: PS1=$ps_git utiliza https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 
 
-alias recargar='source ~/.bashrc'
+alias recargar='source ~/.bashrc'   # Recargar perfiles
 alias instalar='sudo apt-get install'
 alias reinstalar='sudo apt-get --reinstall install'
 alias buscar_ap='apt-cache search'
 alias mostrar_ap='apt-cache show'
 alias actualizar='sudo apt-get install --only-upgrade'
 alias desinstalar='sudo apt-get remove --purge'
+alias informacion='uname -a; lsb_release -a; cat /etc/issue'  ## información del sistema
+
+
 
 ## Programas
 
@@ -54,9 +58,6 @@ alias done='$EDITOR $HOME/todo/done.txt'
 
 # Wget
 alias descargar_directorio='wget -r -np -k'
-
-# Información del sistema
-alias informacion='uname -a; lsb_release -a; cat /etc/issue'
 
 ##Alias de git
 alias st='git status'
