@@ -53,8 +53,8 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 #TODO
 alias t='todo.sh -d $HOME/todo/todo.cfg'
-alias todo='$EDITOR $HOME/todo/todo.txt'
-alias done='$EDITOR $HOME/todo/done.txt'
+alias ver_todo='$EDITOR $HOME/todo/todo.txt'
+alias ver_done='$EDITOR $HOME/todo/done.txt'
 
 # Wget
 alias descargar_directorio='wget -r -np -k'
@@ -70,6 +70,10 @@ alias push='git push'
 alias pushom='git push origin master'
 alias add='git add'
 alias nuevo="git log HEAD@{1}..HEAD@{0}" # Muestra commits desde el último pull
+# Sincronizar un fork
+alias sinc1="git fetch upstream"
+alias sinc2="git checkout master"
+alias sinc3="git merge upstream/master"
 # Añade al último commit los cambios uncommitted y unstaged
 alias gcaa="git commit -a --amend -C HEAD"
 alias deshacer_ci='git reset --soft HEAD~1'
