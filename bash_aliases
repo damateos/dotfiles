@@ -32,6 +32,7 @@ ps_git='[\u: \W$(__git_ps1 " (%s)")]\$ ' #uso: PS1=$ps_git utiliza https://githu
 
 
 alias recargar='source ~/.bashrc'   # Recargar perfiles
+alias cambiar_alias='atom $HOME/.bash_aliases'
 alias instalar='sudo apt-get install'
 alias reinstalar='sudo apt-get --reinstall install'
 alias buscar_ap='apt-cache search'
@@ -55,6 +56,12 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias t='todo.sh -d $HOME/todo/todo.cfg'
 alias ver_todo='$EDITOR $HOME/todo/todo.txt'
 alias ver_done='$EDITOR $HOME/todo/done.txt'
+
+## Jekyll
+alias jserver='bundle exec jekyll server'
+
+##  Python
+alias pserver='python -m SimpleHTTPServer'
 
 # Wget
 alias descargar_directorio='wget -r -np -k'
