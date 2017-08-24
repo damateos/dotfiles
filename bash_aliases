@@ -32,7 +32,7 @@ ps_git='[\u: \W$(__git_ps1 " (%s)")]\$ ' #uso: PS1=$ps_git utiliza https://githu
 
 
 alias recargar='source ~/.bashrc'   # Recargar perfiles
-alias cambiar_alias='atom $HOME/.bash_aliases'
+alias cambiar_alias='$EDITOR $HOME/.bash_aliases'
 alias instalar='sudo apt-get install'
 alias reinstalar='sudo apt-get --reinstall install'
 alias buscar_ap='apt-cache search'
