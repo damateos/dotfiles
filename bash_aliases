@@ -39,9 +39,9 @@ alias buscar_ap='apt-cache search'
 alias mostrar_ap='apt-cache show'
 alias actualizar='sudo apt-get install --only-upgrade'
 alias desinstalar='sudo apt-get remove --purge'
-alias informacion='uname -a; lsb_release -a; cat /etc/issue'  ## información del sistema
 
-
+## información del sistema
+alias informacion='uname -a; lsb_release -a; cat /etc/issue'  
 
 ## Programas
 
@@ -58,7 +58,8 @@ alias ver_todo='$EDITOR $HOME/todo/todo.txt'
 alias ver_done='$EDITOR $HOME/todo/done.txt'
 
 ## Jekyll
-alias jserver='bundle exec jekyll server'
+alias jserver='bundle exec jekyll server --config _config.yml,_config_dev.yml'
+alias jprod='bundle exec jekyll clean; JEKYLL_ENV=production bundle exec jekyll build'
 
 ##  Python
 alias pserver='python -m SimpleHTTPServer'
