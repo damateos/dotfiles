@@ -19,6 +19,7 @@ alias ......="cd ../../../../.."    # subir cinco directorios
 # ls
 alias lsd="ls -l | grep '^d'"
 alias ll="ls -lAhF"
+alias lst='ls -lah'
 
 alias proceso='ps -ef | grep'
 
@@ -33,12 +34,8 @@ ps_git='[\u: \W$(__git_ps1 " (%s)")]\$ ' #uso: PS1=$ps_git utiliza https://githu
 
 alias recargar='source ~/.bashrc'   # Recargar perfiles
 alias cambiar_alias='$EDITOR $HOME/.bash_aliases'
-alias instalar='sudo apt-get install'
-alias reinstalar='sudo apt-get --reinstall install'
 alias buscar_ap='apt-cache search'
 alias mostrar_ap='apt-cache show'
-alias actualizar='sudo apt-get install --only-upgrade'
-alias desinstalar='sudo apt-get remove --purge'
 
 ## información del sistema
 alias informacion='uname -a; lsb_release -a; cat /etc/issue'  
@@ -48,6 +45,9 @@ alias informacion='uname -a; lsb_release -a; cat /etc/issue'
 #Alias imagemagick
 # Recorta una captura de pantalla del navegador (cambiar las medidas para ajustarlas a la pantalla)
 alias recorte_nav='convert -crop 1347x575+0+90 -resize 50%'
+
+alias reducir_pdf='gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile'
+alias reducir_pdf_max='gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile'
 
 # Borrar archivos `.DS_Store`
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -66,6 +66,12 @@ alias pserver='python -m SimpleHTTPServer'
 
 # Wget
 alias descargar_directorio='wget -r -np -k'
+
+# YUI
+alias yui='java -jar ~/bin/yuicompressor-2.4.8.jar'
+
+# Flameshot 
+alias flame='flameshot gui -d 3000'
 
 ##Alias de git
 alias st='git status'
