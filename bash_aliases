@@ -84,6 +84,7 @@ alias push='git push'
 alias pushom='git push origin master'
 alias add='git add'
 alias nuevo="git log HEAD@{1}..HEAD@{0}" # Muestra commits desde el último pull
+alias try_merge="git merge --no-commit --no-ff"
 # Sincronizar un fork
 alias sinc1="git fetch upstream"
 alias sinc2="git checkout master"
