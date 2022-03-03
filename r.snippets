@@ -1,0 +1,26 @@
+snippet aa
+	${1:dataset} <- ${1:dataset} %>% ${0}
+
+snippet shinymod
+	${1:name}_UI <- function(id) {
+	  ns <- NS(id)
+	  tagList(
+	    ${0}
+	  )
+	}
+	
+	${1:name}_Server <- function(id) {
+	  moduleServer(id, function(input, output, session){
+	  	
+	  })
+	}
+	
+	${1:name}_App <- function() {
+	  ui <- fluidPage(
+	    ${1:name}_UI("test")
+	  )
+	  server <- function(input, output, session) {
+	    ${1:name}_Server("test")
+	  }
+	  shinyApp(ui, server)  
+	}
