@@ -39,8 +39,13 @@ alias mostrar_ap='apt-cache show'
 
 ## información del sistema
 alias informacion='uname -a; lsb_release -a; cat /etc/issue'  
+alias get_ip='echo `hostname` `hostname -i` `dig +short +time=1 myip.opendns.com @resolver1.opendns.com`'
 
 ## Programas
+
+# batcat
+alias bat='batcat'
+
 
 #Alias imagemagick
 # Recorta una captura de pantalla del navegador (cambiar las medidas para ajustarlas a la pantalla)
